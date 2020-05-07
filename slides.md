@@ -6,6 +6,11 @@ theme: solarized
 revealOptions:
     transition: 'fade'
 ---
+
+# Curso de desarrollo web
+
+<!--s-->
+
 ## Que es la programación?
 
 Proceso utilizado para idear y ordenar las acciones necesarias para realizar un proyecto
