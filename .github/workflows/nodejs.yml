@@ -28,9 +28,14 @@ jobs:
       run: npm i
     - name: Generate /doc files
       run: npm run generate
-    - name: Commit generated files
+    - name: Config git author
       run: |
         git config --global user.name "Link Strifer"
         git config --global user.email "linkstrifer@users.noreply.github.com"
+    - name: Commit generated files
+      run: |
+        git status
+        git add .
         git commit -am "Automated commit: Generated doc files"
-        git push
+    - name: Push generated files
+      run: git push
