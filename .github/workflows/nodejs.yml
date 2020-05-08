@@ -28,15 +28,9 @@ jobs:
       run: npm i
     - name: Generate /doc files
       run: npm run generate
-    - name: Switch from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.ssh }}
-    - name: Check for changes
-      run: git status
-    - name: Stage changed files
-      run: git add .
-    - name: Commit changes
-      run: git commit -m "Auto update /doc files"
-    - name: Fetch master
-      run: git fetch origin master
-    - name: Push
-      run: git push origin HEAD:master
+    - name: Commit generated files
+      run: |
+        git config --global user.name "Link Strifer"
+        git config --global user.email "linkstrifer@users.noreply.github.com"
+        git commit -am "Automated commit: Generated doc files"
+        git push
