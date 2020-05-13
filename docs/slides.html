@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Slides Template</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Curso de desarrollo web
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Que es la programación?
+
+Proceso utilizado para idear y ordenar las acciones necesarias para realizar un proyecto
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Caracteristicas de la programación?
+
+* Basada en algoritmos (Serie de pasos lógicos para ejecutar una acción)
+* Es el lenguaje con el cual podemos dar ordenes a una maquina
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+## Lenguajes de programación?
+
+### Tipos
+* Lenguajes de Alto nivel (C#, Java, Javascript, Python)
+* Lenguajes de Bajo nivel (Assembler, Binario)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Lenguajes de programación?
+
+### Categorías
+* Compilados (C#, C++, Lisp)
+* Interpretados (Javascript, Java)
+* Combinados (Python, Ruby, Perl) (JITs)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Lenguajes de programación?
+
+### Características
+
+* Fuertemente Tipados (C++, Java, C#, Rust, Typescript)
+* No tipados o débilmente tipados (Python, Javascript, Lisp, Perl)
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Como funciona Internet?
+
+* Redes interconectadas (estándares abiertos)
+* Todos y nadie somos responsables
+* Lenguaje Común: TCP/IP (protocolo)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona Internet?
+
+* Cada computador tiene una IP (identificación única)
+* ISP (Proveedores de Internet) nos dan acceso a la red publica
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona Internet?
+
+![Internet](internet.jpg)
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador?
+
+### Función Principal
+Soliticar al servidor los recursos web que elija el usuario
+y mostrarlos en una ventana.
+* Recurso: Documento HTML, PDF, Imagen, Video, etc.
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador?
+
+### Como solicita recursos?
+A través de una URI (uniform resource identifier) o sea, la dirección del sitio
+web al que quiere acceder.
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador?
+
+### Como interpreta los archivos solicitados?
+A través de HTML, CSS. Estandares regulados por la [W3C](https://www.w3.org/).
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador - Componentes
+![Navegador](layers.png)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador - Tipos y motores de renderizado
+* Netscape (Ya no existe pero fue el mas importante de su tiempo)
+* Chrome (Webkit), Firefox (Gecko), Safari (Webkit), Opera (blink), Edge(Webkit), Explorer (trident) (los mas conocidos)
+* Tor (Parcialmente usados para cosas especiales como acceso a la darkweb)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador - Renderización
+![Flow](flow.png)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador - Renderización con WebKit (Chrome)
+![webkitFlow](webkitflow.png)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Como funciona el Navegador - Renderización con Gecko (Firefox)
+![gekoflow](geckoflow.jpg)
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## Lenguajes para la Web - FrontEnd
+* Javascript
+* Html (Lenguaje de marcas de hipertexto)
+* CSS (Hojas de estilos en cascada)
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+## HTML
+* Html (Lenguaje de marcas de hipertexto) (Mejorado en su versión XHTML)
+* Creado en 1989 para compartir documentos científicos
+* Solo especifica en que posición va el contenido de la página por medio del DOM (Document Object Model)
+* Funciona por medio de etiquetas <></>
+
+</script></section><section data-markdown><script type="text/template">
+## HTML - Etiquetas
+* Html -> Doctype
+* Body -> div, h1...h6, p, table, img, ul, u, i, strong, em, article, aside
+* Head -> title, meta
+* [Etiquetas Html5](https://brandominus.com/blog/creatividad/todas-etiquetas-html5/)
+</script></section><section data-markdown><script type="text/template">
+
+## HTML - Etiquetas
+* Las etiquetas se componen de atributos, donde definimos los valores
+![etiqueta](etiqueta.png)
+</script></section><section data-markdown><script type="text/template">
+
+## HTML - Reglas XHTML
+* Siempre van en minuscula
+* Siempre deben cerrarse (salvo algunas excepciones)
+* Todos los atributos deben tener un valor entre comillas
+* Los elementos deben estar correctamente anidados
+</script></section><section data-markdown><script type="text/template">
+</script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"fade"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

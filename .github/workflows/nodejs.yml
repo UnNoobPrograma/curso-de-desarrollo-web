@@ -24,5 +24,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i
-    - run: npm run generate
+    - name: Install dependencies
+      run: npm i
+    - name: Generate /doc files
+      run: npm run generate
+    - name: Config git author
+      run: |
+        git config --global user.name "Link Strifer"
+        git config --global user.email "linkstrifer@users.noreply.github.com"
+    - name: Commit generated files
+      run: |
+        git status
+        git add .
+        git commit -am "Automated commit: Generated doc files"
+    - name: Push generated files
+      run: git push

@@ -12,7 +12,7 @@ revealOptions:
 
 <!--s-->
 
-## FrontEnd
+### FrontEnd
 - ![gekoflow](front.jpg)
 
 <!--s-->
@@ -75,9 +75,16 @@ Para crear un comentario en el código, usamos
 `<!--Esto es un comentario-->`
 <!--s-->
 
-## HTML - Estructura
-Estructura HMTL5 para armar la página (Semantic Html)
+### HTML - Estructura
+Estructura HMTL5 para armar la página
 ![gekoflow](html5.png)
 <!--v-->
+
+### HTML - Html Semántico
+![gekoflow](semantic.png)
+<!--v-->
+
+### HTML - Práctica
+Crear un archivo HTML con estructura semántica, un titulo y un color de fondo
 
 
